@@ -12,7 +12,12 @@ body {
 }
 .container {
 	display: flex;
-	padding: 24px;
+	padding: 20px;
+}
+
+img {
+	object-fit: cover;
+	border-radius: 10px;
 }
 
 #hero {
@@ -24,7 +29,7 @@ body {
 #header {
 	justify-content: space-between;
 	align-items: center;
-	gap: 24px;
+	gap: 20px;
 	padding: 0;
 }
 
@@ -40,6 +45,7 @@ body {
 	padding: 0;
 	border: 0;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 #hook div {
@@ -51,15 +57,22 @@ body {
 	padding: 0;
 	align-items: center;
 	text-align: justify;
+	justify-content: space-between;
+	height: 100%;
 }
 #hook-content h1 {
 	text-align: left;
+	margin-top: 0;
 }
 #hook-image {
 	padding: 0;
+	height: 100%;
 }
 #hook-image img {
 	width: 100%;
+}
+#hook-content button {
+	margin-top: auto;
 }
 
 #action, button {
@@ -74,6 +87,7 @@ button {
 	width: 200px;
 	transition: .3s;
 }
+
 button:hover {
 	border-color: orange;
 	color: orange;
@@ -86,18 +100,17 @@ button:hover {
 }
 
 #info-box {
-	display: flex;
 	gap: 20px;
 	align-items: center;
 }
 
 .info {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex: 1 0 100px;
 	margin: 50px 0;
+	height: auto;
 }
 
 .info-img img {
@@ -105,7 +118,6 @@ button:hover {
 	width: 100%;
 	flex: 1 0 100px;
 	border: 2px solid #1F2937;
-	border-radius: 10px;
 }
 
 .info-img {
@@ -118,7 +130,7 @@ button:hover {
 }
 
 .info p {
-	width: 100px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -132,7 +144,7 @@ button:hover {
 	width: 60%;
 	font-size: 36px;
 	color: #1F2937;
-	margin: 20px;
+	padding: 20px;
 }
 
 #quote-text {
@@ -184,9 +196,6 @@ button:hover {
 	}
 }
 @media screen and (max-width: 800px) {
-	.container {
-		padding: 20px;
-	}
 	.constrain {
 		width: 95%;
 	}
@@ -210,6 +219,5 @@ button:hover {
 	}
 	#quote p {
 		width: 95%;
-		margin: auto;
 	}
 }
