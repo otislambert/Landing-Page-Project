@@ -110,7 +110,7 @@ button:hover {
 	justify-content: space-around;
 	flex: 1 0 100px;
 	margin: 50px 0;
-	height: 100%;
+	height: auto;
 }
 
 .info-img img {
@@ -132,7 +132,6 @@ button:hover {
 .info p {
 	width: 100%;
 	text-align: center;
-	flex: 1 1;
 }
 
 #quote {
@@ -163,6 +162,7 @@ button:hover {
 	justify-content: space-around;
 	margin: 50px;
 	border-radius: 10px;
+	padding: 20px;
 }
 
 #footer {
