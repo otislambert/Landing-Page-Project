@@ -12,7 +12,11 @@ body {
 }
 .container {
 	display: flex;
-	padding: 24px;
+	padding: 20px;
+}
+
+img {
+	object-fit: cover;
 }
 
 #hero {
@@ -24,7 +28,7 @@ body {
 #header {
 	justify-content: space-between;
 	align-items: center;
-	gap: 24px;
+	gap: 20px;
 	padding: 0;
 }
 
@@ -51,15 +55,23 @@ body {
 	padding: 0;
 	align-items: center;
 	text-align: justify;
+	justify-content: space-between;
+	height: 100%;
 }
 #hook-content h1 {
 	text-align: left;
+	margin-top: 0;
 }
 #hook-image {
 	padding: 0;
+	background-color: darkgray;
+	height: 100%;
 }
 #hook-image img {
 	width: 100%;
+}
+#hook-content button {
+	margin-top: auto;
 }
 
 #action, button {
@@ -86,13 +98,11 @@ button:hover {
 }
 
 #info-box {
-	display: flex;
 	gap: 20px;
 	align-items: center;
 }
 
 .info {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -132,7 +142,6 @@ button:hover {
 	width: 60%;
 	font-size: 36px;
 	color: #1F2937;
-	margin: 20px;
 }
 
 #quote-text {
@@ -184,9 +193,6 @@ button:hover {
 	}
 }
 @media screen and (max-width: 800px) {
-	.container {
-		padding: 20px;
-	}
 	.constrain {
 		width: 95%;
 	}
@@ -210,6 +216,5 @@ button:hover {
 	}
 	#quote p {
 		width: 95%;
-		margin: auto;
 	}
 }
