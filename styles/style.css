@@ -86,6 +86,8 @@ button {
 	border-radius: 10px;
 	width: 200px;
 	transition: .3s;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 button:hover {
@@ -101,7 +103,9 @@ button:hover {
 
 #info-header {
 	text-align: center;
+	color: #1F2937;
 }
+
 #info-box {
 	gap: 20px;
 	align-items: center;
