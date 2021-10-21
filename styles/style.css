@@ -52,12 +52,14 @@ body {
 	align-items: center;
 	text-align: justify;
 }
+#hook-content h1 {
+	text-align: left;
+}
 #hook-image {
 	padding: 0;
 }
 #hook-image img {
 	width: 100%;
-
 }
 
 #action, button {
@@ -69,7 +71,7 @@ button {
 	padding: 20px;
 	border: 2px solid white;
 	border-radius: 10px;
-	width: 100px;
+	width: 200px;
 	transition: .3s;
 }
 button:hover {
@@ -125,8 +127,6 @@ button:hover {
 	background-color: #E5E7EB;
 	width: 100vw;
 	flex: 1 1 auto;
-	align-items: center;
-	justify-content: center;
 }
 #quote p {
 	width: 60%;
@@ -172,4 +172,44 @@ button:hover {
 .section {
 	align-items: center;
 	justify-content: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1080px) {
+	.constrain {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.container {
+		padding: 20px;
+	}
+	.constrain {
+		width: 95%;
+	}
+	#header {
+		display: none;
+	}
+	#hook {
+		justify-content: center;
+	}
+	#hook-image {
+		display: none;
+	}
+	#info-box {
+		gap: 5px;
+	}
+	#hook div {
+		width: 95%;
+	}
+	.info, .info p {
+		margin: 5px;
+	}
+	#quote p {
+		width: 95%;
+		margin: auto;
+	}
 }
