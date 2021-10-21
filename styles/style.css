@@ -99,6 +99,9 @@ button:hover {
 	flex-direction: column;
 }
 
+#info-header {
+	text-align: center;
+}
 #info-box {
 	gap: 20px;
 	align-items: center;
@@ -166,11 +169,14 @@ button:hover {
 }
 
 #footer {
+	flex-direction: column;
 	margin-top: auto;
 	justify-content: center;
 	align-items: center;
 }
-
+#attribution {
+	font-size: 12px;
+}
 #hero, #footer {
 	background-color: #1F2937;
 	color: #F9FAF8;
