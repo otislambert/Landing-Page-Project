@@ -105,9 +105,10 @@ button:hover {
 .info {
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex: 1 0 100px;
 	margin: 50px 0;
+	height: 100%;
 }
 
 .info-img img {
@@ -128,8 +129,9 @@ button:hover {
 }
 
 .info p {
-	width: 100px;
+	width: 100%;
 	text-align: center;
+	flex: 1 1;
 }
 
 #quote {
